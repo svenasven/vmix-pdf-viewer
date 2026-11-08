@@ -22,7 +22,7 @@ licensed under MIT.
 - Ready-made page and document commands; Page Up / Page Down through vMix Shortcuts.
 - Local network access and automatic selection of an available port.
 - Remember the last page and document order; save the library in a single backup file.
-- Closing the window hides it in the system tray while the presentation continues.
+- Closing the window hides it in the taskbar while the presentation continues.
 - **Click the logo to switch themes.** Your choice survives a port change;
   the PDF itself keeps its original colors.
 
