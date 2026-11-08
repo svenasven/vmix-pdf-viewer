@@ -2,6 +2,10 @@
 
 [Русский](../validation.md) | **English**
 
+## 0.10.1
+
+27 automated tests passed. Packaged-app checks cover RU/EN, dialogs, language persistence, translated upload errors, and preservation of PDF filenames and the current page. The 16 core interface scenarios passed.
+
 ## 0.10.0
 
 25 automated tests cover PDFs/API, the library, active-document protection, queue

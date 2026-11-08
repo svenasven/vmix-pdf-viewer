@@ -36,27 +36,23 @@ Screenshots use documents created for demonstration, not users' documents.
 
 ## Quick start
 
-1. Download and run `vMix-PDF-Viewer-0.10.0-Windows.exe` from Releases.
+1. Download and run `vMix-PDF-Viewer-0.10.1-Windows.exe` from Releases.
 2. Add your PDFs. Open **Settings → Set up vMix → Find vMix**
    (**Настройки → Настроить vMix → Найти vMix**).
 3. Select an existing source or add a new one using the wizard.
 4. For keyboard control, install the commands provided by the wizard and assign them in vMix Shortcuts.
 
-The application interface is currently in Russian. The English guide includes the
-actual interface labels to help you find each control.
+Choose Russian or English in Settings → Language. The choice is saved across restarts and port changes.
 
 The EXE does not require a separate Node.js installation. To quit completely,
 right-click the system tray icon and choose **Quit (Выйти)**.
 
 ## Compatibility and status
 
-**Version 0.10.0.** Integration has been tested with vMix Trial 29.0.0.49.
+**Version 0.10.1.** Integration has been tested with vMix Trial 29.0.0.49.
 Commands require a vMix edition that supports Scripting.
 
-User testing confirmed more than an hour of successful operation with 0.10.0,
-including running the app on another computer. The connection and presentation
-resume automatically after restarting vMix.
-[Validation details](docs/en/validation.md).
+The connection and presentation resume automatically after restarting vMix.
 
 Existing libraries remain in `%APPDATA%/PDF Viewer/library`.
 Legacy sources named `PDF Viewer @port` remain compatible with installed commands.

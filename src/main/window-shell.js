@@ -27,5 +27,14 @@ export function createWindowShell({ app, window, Tray, Menu, icon }) {
   app.on('second-instance', show);
   app.on('activate', show);
   app.on('before-quit', () => { quitting = true; if (!tray.isDestroyed()) tray.destroy(); });
-  return { show, hide, tray, menu };
+  function setLanguage(language) {
+    const english = language === 'en';
+    tray.setContextMenu(Menu.buildFromTemplate([
+      { label: english ? 'Open vMix PDF Viewer' : 'Открыть vMix PDF Viewer', click: show },
+      { type: 'separator' },
+      { label: english ? 'Quit' : 'Выйти', click: () => { quitting = true; app.quit(); } }
+    ]));
+    tray.setToolTip(english ? 'vMix PDF Viewer — presentation control' : 'vMix PDF Viewer — управление показом');
+  }
+  return { show, hide, tray, menu, setLanguage };
 }

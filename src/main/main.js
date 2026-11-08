@@ -42,6 +42,10 @@ else {
       title: 'vMix PDF Viewer', frame: false, icon: path.join(root, 'assets/app.ico'), backgroundColor: '#111722', show: false,
       webPreferences: { preload: path.join(root,'src/main/preload.cjs'), nodeIntegration: false, contextIsolation: true, sandbox: true, webSecurity: true } });
     windowShell = createWindowShell({app, window:mainWindow, Tray, Menu, icon:path.join(root,'assets/app.ico')});
+    ipcMain.handle('desktop:language', (event, language) => {
+      if (event.sender !== mainWindow.webContents || event.senderFrame !== mainWindow.webContents.mainFrame || event.senderFrame.url !== origin + '/' || !['ru','en'].includes(language)) return false;
+      windowShell.setLanguage(language); return true;
+    });
     ipcMain.handle('desktop:hide', event => {
       if (event.sender !== mainWindow.webContents || event.senderFrame !== mainWindow.webContents.mainFrame || event.senderFrame.url !== origin + '/') return false;
       windowShell.hide(); return true;

@@ -2,8 +2,7 @@
 
 [Русский](../user-guide.md) | **English**
 
-The application interface is currently in Russian. Translated names below include
-the actual labels shown in the app.
+Choose English or Russian in Settings → Language. Your choice is saved across restarts and port changes. Russian labels are included below for users switching from the Russian interface.
 
 ## Documents and presentation
 

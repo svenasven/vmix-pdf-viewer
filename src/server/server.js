@@ -255,7 +255,7 @@ export function createApp({ now = Date.now, dataDir = null, vmix = new VmixBridg
         file = path.resolve(base, relative);
         if (!file.startsWith(base + path.sep)) return json(res, 403, { error: 'Нет доступа' });
       } else {
-        const files = { '/': 'control.html', '/output': 'output.html', '/control.js': 'control.js', '/output.js': 'output.js', '/style.css': 'style.css', '/theme.css': 'theme.css', '/theme.js': 'theme.js', '/compat.js': 'compat.js', '/pdf-worker.js': 'pdf-worker.js', '/pdf-session.js': 'pdf-session.js', '/thumbnails.js': 'thumbnails.js', '/backup-ui.js': 'backup-ui.js', '/diagnostics-ui.js': 'diagnostics-ui.js', '/dialog-navigation.js': 'dialog-navigation.js' };
+        const files = { '/translations.js': 'translations.js', '/i18n.js': 'i18n.js', '/': 'control.html', '/output': 'output.html', '/control.js': 'control.js', '/output.js': 'output.js', '/style.css': 'style.css', '/theme.css': 'theme.css', '/theme.js': 'theme.js', '/compat.js': 'compat.js', '/pdf-worker.js': 'pdf-worker.js', '/pdf-session.js': 'pdf-session.js', '/thumbnails.js': 'thumbnails.js', '/backup-ui.js': 'backup-ui.js', '/diagnostics-ui.js': 'diagnostics-ui.js', '/dialog-navigation.js': 'dialog-navigation.js' };
         if (!files[url.pathname]) return json(res, 404, { error: 'Не найдено' });
         file = path.join(root, 'src/web', files[url.pathname]);
       }
