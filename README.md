@@ -1,10 +1,12 @@
 # vMix PDF Viewer
 
+**Русский** | [English](README.en.md)
+
 Локальное приложение для показа PDF через **Web Browser Input в vMix**.
 Библиотека документов, управление страницами, готовые команды для клавиатуры,
 светлая и тёмная темы. Windows x64. Открытый независимый проект, лицензия MIT.
 
-[Скачать приложение](https://github.com/svenasven/vmix-pdf-viewer/releases) ·
+[Скачать приложение](https://github.com/svenasven/vmix-pdf-viewer/releases/latest) ·
 [Руководство](docs/user-guide.md) ·
 [Сообщить об ошибке](https://github.com/svenasven/vmix-pdf-viewer/issues)
 

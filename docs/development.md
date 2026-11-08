@@ -1,5 +1,7 @@
 # Разработка и сборка
 
+**Русский** | [English](en/development.md)
+
 Node.js 24+, npm. Окно и переносимая сборка — Windows x64.
 
 ```powershell
