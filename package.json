@@ -1,0 +1,72 @@
+{
+  "name": "vmix-pdf-viewer",
+  "version": "0.10.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/server/server.js",
+    "test": "node --test --test-isolation=none",
+    "desktop": "electron .",
+    "build:win": "electron-builder --win portable --x64"
+  },
+  "dependencies": {
+    "fast-xml-parser": "5.12.0",
+    "pdf-lib": "1.17.1",
+    "pdfjs-dist": "6.5.438"
+  },
+  "devDependencies": {
+    "electron": "45.2.3",
+    "electron-builder": "26.18.0"
+  },
+  "main": "src/main/main.js",
+  "description": "Локальный просмотрщик PDF для vMix с библиотекой документов и управлением показом",
+  "author": "svenasven",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svenasven/vmix-pdf-viewer.git"
+  },
+  "homepage": "https://github.com/svenasven/vmix-pdf-viewer#readme",
+  "bugs": {
+    "url": "https://github.com/svenasven/vmix-pdf-viewer/issues"
+  },
+  "build": {
+    "appId": "local.vmix.pdfviewer",
+    "productName": "vMix PDF Viewer",
+    "asar": true,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "src/**/*",
+      "assets/app.ico",
+      "assets/app.png",
+      "integrations/vmix/PDF_{Next,Previous,NextDocument,PreviousDocument,First,Last}.{vb,txt}",
+      "integrations/vmix/PDF-Viewer.vMixShortcutTemplate",
+      "package.json",
+      "README.md",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md",
+      "LICENSES/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "vMix-PDF-Viewer-${version}-Windows.exe",
+      "icon": "assets/app.ico",
+      "signExecutable": false
+    },
+    "portable": {
+      "artifactName": "vMix-PDF-Viewer-${version}-Windows.exe"
+    }
+  }
+}

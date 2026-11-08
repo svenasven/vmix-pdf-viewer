@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.ico binary
+integrations/vmix/*.vb text eol=crlf
+integrations/vmix/*.txt text eol=crlf

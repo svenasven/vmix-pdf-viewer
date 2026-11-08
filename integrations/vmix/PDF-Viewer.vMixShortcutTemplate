@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ShortcutsTemplate><Name>vMix PDF Viewer — страницы</Name><Shortcuts>
+<Shortcut><ID>9f7fabd0-d493-49bd-81da-19c4af70efbd</ID><GetInputByNumber>false</GetInputByNumber><Disabled>false</Disabled><Triggers />
+<Title>Следующая страница</Title><Value>PDF_Next</Value><Description1 /><Description2 /><SelectedIndex>-1</SelectedIndex>
+<ExpandedKey>PageDown</ExpandedKey><Key>None</Key><Function>ScriptStart</Function><Duration>1000</Duration>
+<Input><Key>00000000-0000-0000-0000-000000000000</Key><Number>0</Number></Input><MIDIChannel>0</MIDIChannel><MIDINote>0</MIDINote></Shortcut>
+<Shortcut><ID>95c64fdb-e0bf-4757-a0c0-f08a2c0776bc</ID><GetInputByNumber>false</GetInputByNumber><Disabled>false</Disabled><Triggers />
+<Title>Предыдущая страница</Title><Value>PDF_Previous</Value><Description1 /><Description2 /><SelectedIndex>-1</SelectedIndex>
+<ExpandedKey>PageUp</ExpandedKey><Key>None</Key><Function>ScriptStart</Function><Duration>1000</Duration>
+<Input><Key>00000000-0000-0000-0000-000000000000</Key><Number>0</Number></Input><MIDIChannel>0</MIDIChannel><MIDINote>0</MIDINote></Shortcut>
+</Shortcuts></ShortcutsTemplate>
